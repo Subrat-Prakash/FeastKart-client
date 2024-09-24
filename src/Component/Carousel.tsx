@@ -36,22 +36,23 @@ const Carousel = () => {
               slidesPerView: 3, // 3 slides on large screens
             },
             1024: {
-              slidesPerView: 4, // 4 slides on extra-large screens
+              slidesPerView: 3, // 3 slides on extra-large screens
             },
           }}
         >
           {Foodtype.map((food, index) => (
             <SwiperSlide key={index} className="flex flex-col items-center">
-              <Link href={`/Food/${food.search}`}>
+              <Link href={`/Food/${food.search}`} className="flex flex-col items-center m-9">
                 <img
                   src={food.img}
                   alt={food.name}
                   className="w-full max-w-[150px] sm:max-w-[180px] lg:max-w-[200px] h-auto mb-2 object-cover rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
                 />
+                {/* Ensure food name is centered directly below the image */}
+                <p className="font-bold text-sm sm:text-base lg:text-lg text-center text-yellow-800 mt-3">
+                  {food.name}
+                </p>
               </Link>
-              <p className="font-bold text-sm sm:text-base lg:text-lg text-center text-yellow-800 mt-2">
-                {food.name}
-              </p>
             </SwiperSlide>
           ))}
         </Swiper>
