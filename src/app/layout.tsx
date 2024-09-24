@@ -20,12 +20,12 @@ export default function RootLayout({
 }) {
   return (
     <ClerkProvider>
-      <html lang="en" className="overflow-x-hidden"> {/* Prevent horizontal scroll */}
-        <body className={`${inter.className} overflow-x-hidden`}> {/* Apply overflow-x-hidden */}
+      <html lang="en" > {/* Prevent horizontal scroll */}
+        <body className={`${inter.className} `}> {/* Apply overflow-x-hidden */}
           <Navbar />
-          <div className="min-h-screen"> {/* Ensure content fills the screen height */}
+           {/* Ensure content fills the screen height */}
             {children}
-          </div>
+          
           <Footer />
         </body>
       </html>
