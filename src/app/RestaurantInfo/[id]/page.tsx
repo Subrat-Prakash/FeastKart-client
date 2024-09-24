@@ -6,12 +6,7 @@ import { Button, Space } from "antd";
 import "react-toastify/dist/ReactToastify.css";
 import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
 import useFoodStore from "@/GlobalState/State";
-import { Metadata } from "next";
-export const metadata: Metadata = {
-  title: "FeastKart | Food Delivery App | Order Food Online | Zomato clone",
-  description: "FeastKart is a leading food delivery web app offering a variety of cuisines from top restaurants. Order food online and get fast delivery right to your doorstep.",
-  keywords: "food delivery, order food online, FeastKart, online food delivery, fast food delivery, restaurant delivery, local restaurants, best food delivery app",
-};
+
 const page = ({ params }: any) => {
   const { Food, addFoodTocart, removeFoodFromCart } = useFoodStore();
   const [data, setdata] = React.useState([]);

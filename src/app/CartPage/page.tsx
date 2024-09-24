@@ -6,12 +6,8 @@ import "react-toastify/dist/ReactToastify.css";
 import Link from "next/link";
 import { loadStripe } from "@stripe/stripe-js";
 import { useUser, SignInButton } from "@clerk/nextjs";
-import { Metadata } from "next";
-export const metadata: Metadata = {
-  title: "FeastKart | Food Delivery App | Order Food Online | Zomato clone",
-  description: "FeastKart is a leading food delivery web app offering a variety of cuisines from top restaurants. Order food online and get fast delivery right to your doorstep.",
-  keywords: "food delivery, order food online, FeastKart, online food delivery, fast food delivery, restaurant delivery, local restaurants, best food delivery app",
-};
+
+
 const page = () => {
   const { Food, removeFoodFromCart, addFoodTocart } = useFoodStore();
   const [disable, setdisable] = React.useState(false);
