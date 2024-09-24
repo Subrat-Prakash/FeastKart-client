@@ -29,7 +29,7 @@ export const Navbar = () => {
         <ul className="flex items-center space-x-8 lg:flex">
           <li>
             <a
-              href="https://zomato-clone-admin.vercel.app"
+              href="https://feastkart-admin.vercel.app"
               aria-label="I've a restaurant"
               title="I've a restaurant"
               className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
