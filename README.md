@@ -1,6 +1,6 @@
-# Zomato Clone Web-App
+# FeastKart 
 
-Welcome to the Zomato Clone Web-App project! This web application is inspired by the popular food delivery platform, Zomato. It offers users a seamless food discovery, ordering, and payment experience while providing restaurant owners with simplified restaurant management tools.
+Welcome to the FeastKart Web-App project! This web application is inspired by the popular food delivery platform, Zomato. It offers users a seamless food discovery, ordering, and payment experience while providing restaurant owners with simplified restaurant management tools.
 
 
 ## Table of Contents
@@ -11,8 +11,8 @@ Welcome to the Zomato Clone Web-App project! This web application is inspired by
 
 ## Admin Dashboard
 
-You can find the admin dashboard repository for this project **Live-:** (https://zomato-clone-admin.vercel.app/CreateProfile)
-**Repo-:** (https://github.com/Jayrajrodage/zomato-admin).
+You can find the admin dashboard repository for this project **Live-:** (https://feastkart-admin.vercel.app/)
+**Repo-:** (https://github.com/Subrat-Prakash/FeastKart-admin).
 
 
 ## Project Overview
