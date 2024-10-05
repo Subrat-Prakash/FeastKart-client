@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import useFoodStore from "@/GlobalState/State";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Link from "next/link";
+
 import { loadStripe } from "@stripe/stripe-js";
 import { useUser, SignInButton } from "@clerk/nextjs";
 
@@ -43,7 +43,7 @@ const page = () => {
     console.log(checkoutSession);
     // Redirecting user/customer to Stripe Checkout
     const result: any = await stripe?.redirectToCheckout({
-      sessionId: checkoutSession.session.id,
+      sessionId: checkoutSession.session.id || checkoutSession?.id,
     });
     setdisable(false);
     console.log(result);

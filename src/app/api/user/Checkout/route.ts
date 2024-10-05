@@ -27,7 +27,7 @@ export async function POST(request: NextRequest) {
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
       shipping_address_collection: {
-        allowed_countries: ["USD"],
+        allowed_countries: ['US', 'IN', 'CA'],
       },
       line_items: modifiedItems,
       phone_number_collection: {
